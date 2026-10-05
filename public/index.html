@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogStream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <h1>LogStream</h1>
+      <p class="subtitle">Live Developer Observability Dashboard</p>
+
+      <div class="controls">
+        <label for="clientId">Name / Client ID</label>
+        <input id="clientId" type="text" placeholder="Enter your name">
+
+        <div class="buttons">
+          <button id="start">Start Stream</button>
+          <button id="stop" disabled>Stop Stream</button>
+        </div>
+      </div>
+
+      <section class="terminal">
+        <div class="terminal-top">
+          <span></span>
+          <span id="status">● Offline</span>
+        </div>
+        <div id="logs" class="logs"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
